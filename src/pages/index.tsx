@@ -219,23 +219,36 @@ const Home = () => {
             </div>
           </div>
         </div>
-        {/* Other sections */}
 
-        {/* banner style */}
-        <div className="bg-black py-20" id="about">
-          <div className="container mx-auto flex h-full max-w-6xl flex-col items-start justify-center">
-            <h1 className="text-5xl font-semibold uppercase italic tracking-tight text-white sm:text-5xl">
-              About Us
-            </h1>
-            <p className="mt-4 max-w-2xl text-2xl font-semibold leading-7 tracking-wide text-white">
-              {/* a description for an in person, very personal running training, very motivational and miltary style with 2 trainers */}
-              We are here to help you achieve your running goals. Whether you
-              are a beginner or a seasoned runner, we can help you improve your
-              running form, speed, and endurance. We offer a variety of services
-              to help you achieve your goals.
-            </p>
+        <section id="about">
+          <div className="bg-black px-4 py-8 sm:py-20">
+            <div className="container mx-auto flex h-full max-w-6xl flex-col items-start justify-center px-4 sm:px-0">
+              <h1 className="text-2xl font-bold uppercase italic tracking-tight text-white sm:text-4xl md:text-5xl">
+                Our <span className="text-green-500">Mission</span>
+              </h1>
+              <p className="mt-1.5 max-w-2xl text-xl font-bold leading-6 text-white sm:mt-4 sm:text-2xl sm:leading-7 sm:tracking-wide">
+                Empowering individuals to reach their full potential in running
+                by providing personalized coaching, tailored training programs,
+                and unwavering support for athletes of all levels
+                <span className="text-green-500">.</span>
+              </p>
+            </div>
           </div>
-        </div>
+
+          <div className="bg-white px-4 py-8 sm:py-20">
+            <div className="container mx-auto flex h-full max-w-6xl flex-col items-start justify-center px-4 sm:px-0">
+              <h1 className="text-2xl font-bold uppercase italic tracking-tight text-black sm:text-4xl md:text-5xl">
+                Our <span className="text-green-500">Story</span>
+              </h1>
+              <p className="mt-1.5 max-w-2xl text-xl font-bold leading-6 text-black sm:mt-4 sm:text-2xl sm:leading-7 sm:tracking-wide">
+                Our story began with a shared passion for running and coaching,
+                which led us to create a community where athletes of all levels
+                can achieve their goals. We take pride in fostering lasting
+                relationships while supporting our members on their journeys.
+              </p>
+            </div>
+          </div>
+        </section>
 
         {/* Footer */}
         {/* ... */}
