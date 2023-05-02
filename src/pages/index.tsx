@@ -21,6 +21,9 @@ const Home = () => {
       <Head>
         <title>ARUN | HOME</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+        {/* sets the nav bar color on iphone */}
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
       </Head>
 
       <div className="flex flex-col bg-green-600 font-sans">
