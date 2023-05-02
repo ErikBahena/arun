@@ -9,12 +9,44 @@ import facebookIcon from "../../public/logos/facebook.svg";
 import Link from "next/link";
 import Head from "next/head";
 
+// const benefits = [
+//   {
+//     title: "Personalized Coaching",
+//     description:
+//       "Receive one-on-one guidance from experienced coaches tailored to your needs and goals.",
+//     icon: instaIcon.src,
+//   },
+//   {
+//     title: "Custom Training Plans",
+//     description:
+//       "Get bespoke training plans designed to help you improve your running form, speed, and endurance.",
+//     icon: snapIcon.src,
+//   },
+//   {
+//     title: "Supportive Community",
+//     description:
+//       "Join a network of passionate runners who share your love for the sport and will support you every step of the way.",
+//     icon: facebookIcon.src,
+//   },
+// ];
+
 const Home = () => {
   const [showMenu, setShowMenu] = useState<boolean>(false);
+//   const [screenWidth, setScreenWidth] = useState<number>(0);
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
+
+//   const handleResize = () => {
+//     setScreenWidth(window.innerWidth);
+//   };
+
+//   useEffect(() => {
+//     setScreenWidth(window.innerWidth);
+//     window.addEventListener("resize", handleResize);
+//     return () => window.removeEventListener("resize", handleResize);
+//   }, []);
 
   return (
     <>
@@ -234,6 +266,27 @@ const Home = () => {
               </p>
             </div>
           </div>
+
+          {/* <div className="hide-scrollbar flex snap-x snap-mandatory flex-row overflow-x-auto transition-all duration-700 sm:justify-center">
+            {benefits.map((benefit) => (
+              <div
+                className="m-4 flex cursor-pointer snap-center flex-col items-center justify-center rounded-md bg-white p-6 shadow-lg"
+                key={benefit.title}
+                style={{ minWidth: screenWidth - 60 }}
+              >
+                <h3 className="text-xl font-bold uppercase italic tracking-tight text-black">
+                  {benefit.title}
+                </h3>
+                <p className="mt-1.5 max-w-2xl text-lg font-bold leading-6 text-black sm:mt-4 sm:text-2xl sm:leading-7 sm:tracking-wide">
+                  {benefit.description}
+                  Ut excepteur laboris et tempor qui. Sint et officia id
+                  exercitation. Pariatur fugiat eu reprehenderit deserunt mollit
+                  fugiat ex sint labore. Non labore proident anim labore ea
+                  consequat.
+                </p>
+              </div>
+            ))}
+          </div> */}
 
           <div className="bg-white px-4 py-8 sm:py-20">
             <div className="container mx-auto flex h-full max-w-6xl flex-col items-start justify-center px-4 sm:px-0">
