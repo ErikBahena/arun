@@ -207,7 +207,7 @@ const Home = () => {
               <h1 className="text-center text-3xl font-bold uppercase italic tracking-tight text-white sm:text-5xl">
                 Synergized Training
               </h1>
-              <p className="mt-2 max-w-md text-center text-lg font-semibold leading-5 tracking-wide text-white  sm:mt-4 sm:max-w-2xl sm:text-xl md:text-2xl md:leading-7">
+              <p className="mt-2 max-w-md text-center text-xl font-bold leading-6 tracking-wide text-white  sm:mt-4 sm:max-w-2xl sm:text-xl md:text-2xl md:leading-7">
                 Achieve your running goals with our personalized programs,
                 improving form, speed, and endurance for all levels.
               </p>
