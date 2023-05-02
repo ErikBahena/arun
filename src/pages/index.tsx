@@ -9,7 +9,6 @@ import facebookIcon from "../../public/logos/facebook.svg";
 import Link from "next/link";
 import Head from "next/head";
 
-// Okay here's the code now, I need the content to be centered, ideally not absolutely
 const Home = () => {
   const [showMenu, setShowMenu] = useState<boolean>(false);
 
