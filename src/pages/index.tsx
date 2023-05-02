@@ -23,14 +23,16 @@ const Home = () => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
         {/* sets the nav bar color on iphone */}
-        <meta name="apple-mobile-web-app-status-bar-style" content="rgb(22, 163, 74)" />
-        <meta name="theme-color" content="rgb(22, 163, 74)" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#000000" />
+        <meta name="theme-color" content="#000000" />
 
         {/* sets the color of the address bar on chrome */}
-        <meta name="theme-color" content="rgb(22, 163, 74)" />
+        <meta name="theme-color" content="#000000" />
+
+        {/* if green it would be rgb (22, 163, 74) */}
 
         {/* sets the color of the address bar on mobile safari */}
-        <meta name="apple-mobile-web-app-status-bar-style" content="rgb(22, 163, 74)" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#000000" />
       </Head>
 
       <div className="flex flex-col bg-green-600 font-sans">
