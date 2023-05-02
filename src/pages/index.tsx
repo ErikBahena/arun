@@ -24,6 +24,13 @@ const Home = () => {
 
         {/* sets the nav bar color on iphone */}
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="theme-color" content="#000000" />
+
+        {/* sets the color of the address bar on chrome */}
+        <meta name="theme-color" content="#000000" />
+
+        {/* sets the color of the address bar on mobile safari */}
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
       </Head>
 
       <div className="flex flex-col bg-green-600 font-sans">
