@@ -209,7 +209,7 @@ const Home = () => {
               </p>
               <Link href="#about" scroll={false}>
                 <button className="mt-4 rounded-md border-2 border-green-500 bg-black px-8 py-3 font-bold text-green-500 shadow-lg hover:bg-green-500 hover:text-white focus:outline-none focus:ring-4 focus:ring-green-500 focus:ring-opacity-50 sm:mt-6 sm:rounded-lg sm:text-xl">
-                  What we're about
+                  What we&apos;re about
                 </button>
               </Link>
             </div>
