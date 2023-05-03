@@ -272,7 +272,7 @@ const Home = () => {
               <h1 className="text-2xl font-bold uppercase italic tracking-tight text-black sm:text-4xl md:text-5xl">
                 Meet Our <span className="text-green-500">Team</span>
               </h1>
-              <div className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2">
+              <div className="mt-6 sm:mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2">
                 <div
                   className="flex flex-col items-center justify-center rounded-lg bg-white p-8 shadow-md transition duration-300 hover:scale-105
                   hover:shadow-lg md:p-10"
