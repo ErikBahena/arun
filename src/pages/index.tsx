@@ -282,10 +282,10 @@ const Home = () => {
                     alt="Team member photo"
                     className="mb-4 h-32 w-32 rounded-full border-4 border-green-500 object-cover"
                   />
-                  <h2 className="mb-1 text-lg font-bold text-gray-800">
+                  <h2 className="text-lg font-bold text-gray-800">
                     Jonas Kavali
                   </h2>
-                  <p className="text-center text-gray-600">Personal Trainer</p>
+                  <p className="text-center text-gray-500">Personal Trainer</p>
                 </div>
 
                 <div
@@ -297,10 +297,10 @@ const Home = () => {
                     alt="Team member photo"
                     className="mb-4 h-32 w-32 rounded-full border-4 border-green-500 object-cover"
                   />
-                  <h2 className="mb-1 text-lg font-bold text-gray-800">
+                  <h2 className="text-lg font-bold text-gray-800">
                     Josh Rojas
                   </h2>
-                  <p className="text-center text-gray-600">Personal Trainer</p>
+                  <p className="text-center text-gray-500">Personal Trainer</p>
                 </div>
               </div>
             </div>
