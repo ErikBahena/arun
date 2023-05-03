@@ -1,6 +1,8 @@
 import { useState } from "react";
 import hero1 from "../../public/images/hero-1.jpeg";
 import hero2 from "../../public/images/hero-2.jpeg";
+import pt1 from "../../public/images/PT_1.jpg";
+import pt2 from "../../public/images/PT_2.jpeg";
 import navLogoLight from "../../public/logos/nav-logo-light.png";
 import instaIcon from "../../public/logos/instagram.svg";
 import snapIcon from "../../public/logos/snapchat.svg";
@@ -32,21 +34,21 @@ import Head from "next/head";
 
 const Home = () => {
   const [showMenu, setShowMenu] = useState<boolean>(false);
-//   const [screenWidth, setScreenWidth] = useState<number>(0);
+  //   const [screenWidth, setScreenWidth] = useState<number>(0);
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
 
-//   const handleResize = () => {
-//     setScreenWidth(window.innerWidth);
-//   };
+  //   const handleResize = () => {
+  //     setScreenWidth(window.innerWidth);
+  //   };
 
-//   useEffect(() => {
-//     setScreenWidth(window.innerWidth);
-//     window.addEventListener("resize", handleResize);
-//     return () => window.removeEventListener("resize", handleResize);
-//   }, []);
+  //   useEffect(() => {
+  //     setScreenWidth(window.innerWidth);
+  //     window.addEventListener("resize", handleResize);
+  //     return () => window.removeEventListener("resize", handleResize);
+  //   }, []);
 
   return (
     <>
@@ -116,14 +118,12 @@ const Home = () => {
               <button className="flex md:hidden" onClick={toggleMenu}>
                 <svg
                   className="h-8 w-8 text-white transition duration-300 hover:text-green-500"
-                  x-show="!showMenu"
                   fill="white"
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2.5"
                   viewBox="0 0 24 24"
-                  x-cloak=""
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path d="M4 6h16M4 12h16M4 18h16"></path>
@@ -267,26 +267,46 @@ const Home = () => {
             </div>
           </div>
 
-          {/* <div className="hide-scrollbar flex snap-x snap-mandatory flex-row overflow-x-auto transition-all duration-700 sm:justify-center">
-            {benefits.map((benefit) => (
-              <div
-                className="m-4 flex cursor-pointer snap-center flex-col items-center justify-center rounded-md bg-white p-6 shadow-lg"
-                key={benefit.title}
-                style={{ minWidth: screenWidth - 60 }}
-              >
-                <h3 className="text-xl font-bold uppercase italic tracking-tight text-black">
-                  {benefit.title}
-                </h3>
-                <p className="mt-1.5 max-w-2xl text-lg font-bold leading-6 text-black sm:mt-4 sm:text-2xl sm:leading-7 sm:tracking-wide">
-                  {benefit.description}
-                  Ut excepteur laboris et tempor qui. Sint et officia id
-                  exercitation. Pariatur fugiat eu reprehenderit deserunt mollit
-                  fugiat ex sint labore. Non labore proident anim labore ea
-                  consequat.
-                </p>
+          <div className="bg-gray-100 px-4 py-8 sm:py-20">
+            <div className="container mx-auto flex h-full max-w-6xl flex-col items-center justify-center px-4 sm:px-0">
+              <h1 className="text-2xl font-bold uppercase italic tracking-tight text-black sm:text-4xl md:text-5xl">
+                Meet Our <span className="text-green-500">Team</span>
+              </h1>
+              <div className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2">
+                <div
+                  className="flex flex-col items-center justify-center rounded-lg bg-white p-8 shadow-md transition duration-300 hover:scale-105
+                  hover:shadow-lg md:p-10"
+                >
+                  <img
+                    src={pt1.src}
+                    alt="Team member photo"
+                    className="mb-4 h-32 w-32 rounded-full border-4 border-green-500 object-cover"
+                  />
+                  <h2 className="mb-1 text-lg font-bold text-gray-800">
+                    Jonas Kavali
+                  </h2>
+                  <p className="text-center text-gray-600">Personal Trainer</p>
+                </div>
+
+                <div
+                  className="flex flex-col items-center justify-center rounded-lg bg-white p-8 shadow-md transition duration-300 hover:scale-105
+                  hover:shadow-lg md:p-10"
+                >
+                  <img
+                    src={pt2.src}
+                    alt="Team member photo"
+                    className="mb-4 h-32 w-32 rounded-full border-4 border-green-500 object-cover"
+                  />
+                  <h2 className="mb-1 text-lg font-bold text-gray-800">
+                    Josh Rojas
+                  </h2>
+                  <p className="text-center text-gray-600">Personal Trainer</p>
+                </div>
               </div>
-            ))}
-          </div> */}
+            </div>
+          </div>
+
+          {/* Youtube Video Section Here */}
 
           <div className="bg-white px-4 py-8 sm:py-20">
             <div className="container mx-auto flex h-full max-w-6xl flex-col items-start justify-center px-4 sm:px-0">
