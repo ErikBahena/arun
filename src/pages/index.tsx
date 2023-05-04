@@ -253,6 +253,19 @@ const Home = () => {
         </div>
 
         <section id="about">
+          <div className="px-4 py-8 sm:py-20">
+            <h1 className="mb-6 text-center text-2xl font-bold uppercase italic tracking-tight text-white sm:text-4xl md:text-5xl">
+              Our Video
+            </h1>
+            <iframe
+              src="https://www.youtube.com/embed/RXGekk4pfbU"
+              title="Video Title"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="container mx-auto aspect-video h-full w-full max-w-6xl rounded-lg  px-4 sm:px-0"
+            ></iframe>
+          </div>
+
           <div className="bg-black px-4 py-8 sm:py-20">
             <div className="container mx-auto flex h-full max-w-6xl flex-col items-start justify-center px-4 sm:px-0">
               <h1 className="text-2xl font-bold uppercase italic tracking-tight text-white sm:text-4xl md:text-5xl">
@@ -267,12 +280,13 @@ const Home = () => {
             </div>
           </div>
 
+          {/* Team Section */}
           <div className="bg-gray-100 px-4 py-8 sm:py-20">
             <div className="container mx-auto flex h-full max-w-6xl flex-col items-center justify-center px-4 sm:px-0">
               <h1 className="text-2xl font-bold uppercase italic tracking-tight text-black sm:text-4xl md:text-5xl">
-                Meet Our <span className="text-green-500">Team</span>
+                Our <span className="text-green-500">Team</span>
               </h1>
-              <div className="mt-6 sm:mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2">
+              <div className="mt-6 grid grid-cols-1 gap-8 sm:mt-7 sm:grid-cols-2">
                 <div
                   className="flex flex-col items-center justify-center rounded-lg bg-white p-8 shadow-md transition duration-300 hover:scale-105
                   hover:shadow-lg md:p-10"
@@ -306,8 +320,6 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Youtube Video Section Here */}
-
           <div className="bg-white px-4 py-8 sm:py-20">
             <div className="container mx-auto flex h-full max-w-6xl flex-col items-start justify-center px-4 sm:px-0">
               <h1 className="text-2xl font-bold uppercase italic tracking-tight text-black sm:text-4xl md:text-5xl">
@@ -323,8 +335,128 @@ const Home = () => {
           </div>
         </section>
 
-        {/* Footer */}
-        {/* ... */}
+        <footer className="bg-black px-4 py-12 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-6xl">
+            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
+              <div>
+                <h2 className="mb-4 text-lg font-bold text-white">About Us</h2>
+                <p className="text-gray-400">
+                  We provide personalized coaching and tailored training
+                  programs to help runners of all levels achieve their goals.
+                  Our mission is to create a supportive and inclusive community
+                  that encourages and motivates runners to reach their full
+                  potential.
+                </p>
+              </div>
+              <div>
+                <h2 className="mb-4 text-lg font-bold text-white">
+                  Useful Links
+                </h2>
+                <ul className="list-none">
+                  <li>
+                    <a
+                      href="#"
+                      className="text-gray-400 transition duration-300 hover:text-white"
+                    >
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#about"
+                      className="text-gray-400 transition duration-300 hover:text-white"
+                    >
+                      About
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="text-gray-400 transition duration-300 hover:text-white"
+                    >
+                      Coaching
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="text-gray-400 transition duration-300 hover:text-white"
+                    >
+                      Training Programs
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="text-gray-400 transition duration-300 hover:text-white"
+                    >
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h2 className="mb-4 text-lg font-bold text-white">Follow Us</h2>
+                <div className="flex flex-col">
+                  <div className="flex items-center">
+                    <a
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center space-x-2 font-semibold text-gray-400 transition duration-300 hover:text-green-500"
+                    >
+                      <img
+                        src={instaIcon.src}
+                        alt="instagram"
+                        className="h-9 w-9"
+                      />
+                      <span>Synergizedtraining</span>
+                    </a>
+                  </div>
+                  <div className="flex items-center">
+                    <a
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center space-x-2 font-semibold text-gray-400 transition duration-300 hover:text-green-500"
+                    >
+                      <img
+                        src={snapIcon.src}
+                        alt="instagram"
+                        className="h-9 w-9"
+                      />
+                      <span>SomeSnap</span>
+                    </a>
+                  </div>
+                  <div className="flex items-center">
+                    <a
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center space-x-2 font-semibold text-gray-400 transition duration-300 hover:text-green-500"
+                    >
+                      <img
+                        src={facebookIcon.src}
+                        alt="instagram"
+                        className="h-9 w-9"
+                      />
+                      <span>HereThere</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="mt-8 border-t border-gray-700 pt-8 text-center">
+              <p className="text-gray-400 flex justify-center flex-wrap">
+                &copy;&nbsp;2023&nbsp;
+                <span className="font-bold uppercase italic tracking-tight text-white">
+                  Synergized Training
+                </span>
+                &nbsp;All rights reserved
+              </p>
+            </div>
+          </div>
+        </footer>
       </div>
     </>
   );
