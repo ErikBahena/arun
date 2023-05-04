@@ -257,13 +257,15 @@ const Home = () => {
             <h1 className="mb-6 text-center text-2xl font-bold uppercase italic tracking-tight text-white sm:text-4xl md:text-5xl">
               Our Video
             </h1>
-            <iframe
-              src="https://www.youtube.com/embed/RXGekk4pfbU"
-              title="Video Title"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              className="container mx-auto aspect-video h-full w-full max-w-6xl rounded-lg  px-4 sm:px-0"
-            ></iframe>
+            <div className="container mx-auto aspect-video max-w-6xl overflow-hidden rounded-lg">
+              <iframe
+                src="https://www.youtube.com/embed/RXGekk4pfbU"
+                title="Video Title"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="h-full w-full"
+              ></iframe>
+            </div>
           </div>
 
           <div className="bg-black px-4 py-8 sm:py-20">
@@ -447,7 +449,7 @@ const Home = () => {
               </div>
             </div>
             <div className="mt-8 border-t border-gray-700 pt-8 text-center">
-              <p className="text-gray-400 flex justify-center flex-wrap">
+              <p className="flex flex-wrap justify-center text-gray-400">
                 &copy;&nbsp;2023&nbsp;
                 <span className="font-bold uppercase italic tracking-tight text-white">
                   Synergized Training
