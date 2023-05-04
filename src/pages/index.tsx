@@ -254,7 +254,7 @@ const Home = () => {
 
         <section id="about">
           <div className="px-4 py-8 sm:py-20">
-            <h1 className="mb-6 text-center text-2xl font-bold uppercase italic tracking-tight text-white sm:text-4xl md:text-5xl">
+            <h1 className="mb-3 sm:mb-6 text-center text-2xl font-bold uppercase italic tracking-tight text-white sm:text-4xl md:text-5xl">
               Our Video
             </h1>
             <div className="container mx-auto aspect-video max-w-6xl overflow-hidden rounded-lg">
